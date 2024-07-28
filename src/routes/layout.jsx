@@ -50,7 +50,7 @@ const links = [
     icon: null,
     target: '',
     path: `about`,
-  }
+  },
 ]
 
 export default function Root() {
@@ -83,7 +83,7 @@ export default function Root() {
   }
 
   useEffect(() => {}, [])
-return <Loading/>
+
   return (
     <>
       <Toaster />
@@ -97,7 +97,7 @@ return <Loading/>
               <img alt={import.meta.env.VITE_TITLE} src={Logo} />
               <figcaption>{import.meta.env.VITE_NAME}</figcaption>
               <figure>
-                <img src={MenuIcon} className={`${styles['logo__nav']} ms-hiddenLgUp`}/>
+                <img src={MenuIcon} className={`${styles['logo__nav']} ms-hiddenLgUp`} />
               </figure>
             </figure>
           </Link>
