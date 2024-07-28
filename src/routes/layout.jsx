@@ -7,7 +7,7 @@ import MaterialIcon from './helper/MaterialIcon'
 import Icon from './helper/MaterialIcon'
 import Logo from './../../src/assets/logo.svg'
 import LogoIcon from './../../src/assets/logo-icon.svg'
-import TelegramIcon from './../../src/assets/icon-telegram.svg'
+import Loading from './components/Loading'
 import XIcon from './../../src/assets/icon-x.svg'
 import CGIcon from './../../src/assets/icon-cg.svg'
 import GitHubIcon from './../../src/assets/icon-github.svg'
@@ -83,7 +83,7 @@ export default function Root() {
   }
 
   useEffect(() => {}, [])
-
+return <Loading/>
   return (
     <>
       <Toaster />

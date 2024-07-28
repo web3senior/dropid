@@ -16,18 +16,8 @@
     row-gap: 0.4rem;
     overflow: hidden;
 
-    &::before {
-      content: 'Powered by';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 1.4rem;
-      text-align: center;
-      color: #838a9e;
-      text-wrap: nowrap;
-    }
-
     figure {
-      width: 8rem;
+      width: 4rem;
       img {
         width: 100%;
       }
@@ -43,7 +33,7 @@
         content: '';
         position: absolute;
         height: 100%;
-        background: var(--color-black);
+        background: var(--color-primary);
         animation: progress 1.5s infinite ease-in-out;
       }
     }
