@@ -1,51 +1,108 @@
 import { Title } from './helper/DocumentTitle'
-import styles from './Ecosystem.module.scss'
+import styles from './Tip.module.scss'
 
-export default function Ecosystem({ title }) {
+export default function Tips({ title }) {
   Title(title)
 
   return (
     <section className={styles.section}>
       <div className={`${styles['alert']} ms-motion-slideUpIn`}>
-      <div className={`__container`} data-width={`large`}>
-        <h2>Alpha version</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu metus fringilla, faucibus enim at, pharetra tellus. Sed tempor mi vel lacus ullamcorper, non volutpat nibh scelerisque. Nulla at ante tempor, cursus risus non, semper tellus. Duis id sagittis ex. </p>
+        <div className={`__container`} data-width={`large`}>
+          <h2>Unleash the Power of Your Dropid Username</h2>
+          <p>Own a unique, tradeable username that unlocks a new level of control and personalization in the decentralized web.</p>
         </div>
-        </div>
+      </div>
       <div className={`${styles['container']} __container ms-motion-slideUpIn`} data-width={`large`}>
-        <div className={`text-justify`}>
-          <b>What's royalty program?</b>
+        <article className={`text-justify`}>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu metus fringilla, faucibus enim at, pharetra tellus. Sed tempor mi vel lacus ullamcorper, non volutpat nibh scelerisque. Nulla at ante tempor, cursus risus non, semper
-            tellus. Duis id sagittis ex. Ut ac mi sit amet augue suscipit congue a id ante. Vivamus a pretium justo. Ut metus metus, posuere id diam eu, tristique consectetur est. Donec ultrices in orci eget vulputate. Duis lobortis quam non libero
-            auctor condimentum vitae nec nibh. Suspendisse mollis tellus quis orci volutpat facilisis. Aenean sit amet leo imperdiet lectus condimentum porta. Suspendisse in augue fringilla, blandit quam sed, sagittis ante. Vestibulum condimentum
-            lectus sit amet sapien ullamcorper, sit amet tincidunt lacus semper. Aenean fringilla enim sit amet vestibulum fermentum. Morbi non tincidunt velit, at tincidunt nunc.
+            <h2>Introduction</h2>
           </p>
 
-          <p>
-            Praesent at lacus a tortor interdum pharetra. Etiam ipsum erat, tempor vitae felis vitae, dictum pellentesque ipsum. Integer sed consectetur felis. Sed vel dolor laoreet, efficitur eros eget, posuere ex. Vivamus dictum venenatis
-            ullamcorper. Etiam laoreet, lorem non imperdiet mattis, tellus enim euismod augue, eu facilisis purus massa vitae eros. Donec id nulla consectetur, cursus est sed, pulvinar tellus. Sed nec ligula commodo, iaculis nibh at, iaculis turpis.
-            Ut quis neque quis nunc tempor pretium quis vitae odio.
-          </p>
+          <p>Owning a Web3 username on Dropid is like owning a piece of digital real estate. It&#39;s your unique identity in the decentralized world. Here are some tips to help you choose and acquire the perfect Web3 username.</p>
 
           <p>
-            Praesent sit amet finibus nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Maecenas eleifend erat ac mauris porttitor, non feugiat lorem dictum. Duis
-            rutrum ipsum ut lacus maximus imperdiet. Pellentesque tempor purus eu turpis tincidunt suscipit. In at arcu nec orci sagittis tincidunt vel egestas orci. Nulla dictum aliquam ultricies. Suspendisse et velit turpis. Nunc semper justo
-            libero, in facilisis lorem maximus a. Nam in erat vitae enim varius eleifend nec sed lectus.
+            <h3>Choose a Memorable Username</h3>
           </p>
 
-          <p>
-            Duis iaculis, tortor volutpat vehicula varius, orci purus pretium enim, in consequat eros quam a nisi. Sed vitae interdum magna. Proin accumsan ut quam ac ullamcorper. Donec at auctor dui. Ut venenatis mauris eu pellentesque pulvinar. In
-            hac habitasse platea dictumst. Etiam ac elit nisl.
-          </p>
+          <ul>
+            <li>
+              <strong>Keep it simple:</strong> Shorter usernames are easier to remember.
+            </li>
+            <li>
+              <strong>Reflect your identity:</strong> Consider your personal brand or interests.
+            </li>
+            <li>
+              <strong>Avoid numbers and special characters:</strong> While possible, they can be harder to recall.
+            </li>
+            <li>
+              <strong>Check availability:</strong> Use Dropid&#39;s search function to see if your desired username is available.
+            </li>
+          </ul>
 
           <p>
-            Integer iaculis ligula ut tortor suscipit porttitor. Curabitur dignissim interdum augue vel pharetra. Vivamus metus elit, tempus vel augue ornare, efficitur ultrices sem. Quisque sollicitudin turpis imperdiet turpis convallis mattis. Duis
-            varius ullamcorper placerat. Nulla facilisi. Etiam fermentum aliquam massa, vel rhoncus libero vestibulum eget. Cras commodo justo nec urna vestibulum vulputate. Quisque sapien nisi, auctor in mattis sed, suscipit quis massa. Sed dictum
-            diam quis magna blandit, nec scelerisque libero commodo. Curabitur sagittis metus mauris, eget imperdiet massa dapibus sed. Nulla diam velit, bibendum nec nisl ut, bibendum eleifend purus. Donec lorem mauris, convallis sodales odio in,
-            hendrerit viverra tellus. Suspendisse a quam rhoncus, pretium nulla quis, bibendum turpis. Aenean in massa sed turpis pellentesque vehicula. Praesent non congue lorem.
+            <h3>Understand the Value Proposition</h3>
           </p>
-        </div>
+
+          <ul>
+            <li>
+              <strong>Research:</strong> Learn about the benefits of owning a Web3 username.
+            </li>
+            <li>
+              <strong>Consider future use cases:</strong> Think about how you might use your username beyond Telegram.
+            </li>
+            <li>
+              <strong>Evaluate pricing:</strong> Compare prices of different usernames to determine your budget.
+            </li>
+          </ul>
+
+          <p>
+            <h3>Secure Your Wallet</h3>
+          </p>
+
+          <ul>
+            <li>
+              <strong>Choose a reliable wallet:</strong> Use a reputable wallet provider.
+            </li>
+            <li>
+              <strong>Enable two-factor authentication:</strong> Protect your wallet with an extra layer of security.
+            </li>
+            <li>
+              <strong>Backup your seed phrase:</strong> Keep your seed phrase safe and offline.
+            </li>
+          </ul>
+
+          <p>
+            <h3>Participate in Auctions</h3>
+          </p>
+
+          <ul>
+            <li>
+              <strong>Set a budget:</strong> Determine how much you&#39;re willing to spend.
+            </li>
+            <li>
+              <strong>Be patient:</strong> Popular usernames might have high starting bids.
+            </li>
+            <li>
+              <strong>Consider bidding strategically:</strong> Wait for the auction to progress before placing your bid.
+            </li>
+          </ul>
+
+          <p>
+            <h3>Utilize Dropid&#39;s Features</h3>
+          </p>
+
+          <ul>
+            <li>
+              <strong>Explore filters:</strong> Use Dropid&#39;s search filters to find usernames based on length, availability, and price.
+            </li>
+            <li>
+              <strong>Leverage suggestions:</strong> Dropid can suggest similar usernames if your preferred choice is unavailable.
+            </li>
+            <li>
+              <strong>Read user reviews:</strong> Check reviews to get insights into the platform and user experiences.
+            </li>
+          </ul>
+        </article>
       </div>
     </section>
   )

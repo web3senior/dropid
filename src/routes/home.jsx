@@ -223,76 +223,69 @@ function Home({ title }) {
   }
 
   const handleRegister = async (e) => {
+    if (!auth.wallet) {
+      toast.error(`Please connect your wallet and try again!`)
+      return
+    }
+
     const t = toast.loading(`Waiting for transaction's confirmation`)
     const price = _.toNumber(recordType.filter((item, i) => item.id.toString() === selectedRecordType.toString())[0].price)
     const recordTypeName = recordType.filter((item, i) => item.id.toString() === recordTypeRef.current.value.toString())[0].name
 
     try {
-
-
       generateImageUrl(`${txtSearchRef.current.value}.${recordTypeName}`).then((imageUrl) => {
         console.log(imageUrl)
         rAsset(imageUrl).then((result) => {
           console.log(result)
           console.log(`Verifiable URL`, _.keccak256(result))
 
- //metadata
- const rawMetadata ={
-  LSP4Metadata: {
-    name: '2222222222222',
-    description:'Mint ydssdsd',
-    links: [
-      { title: 'Website', url: 'https://pepitolyx.com' },
-      { title: 'Mint', url: 'https://genesis.pepitolyx.com' },
-      { title: 'Common Ground', url: 'https://app.cg/c/Pepito' },
-      { title: '𝕏', url: 'https://x.com/pepitolyx' },
-      { title: 'Telegram', url: 'https://t.me/pepitolyx' },
-    ],
-    attributes: [
-      { key: 'Stage', value: '0' },
-      { key: 'Type', value: 'Spawn' },
-      { key: 'Background', value: '' },
-      { key: 'Skin', value: '' },
-      { key: 'Eyes', value: '' },
-      { key: 'Tattoos', value: '' },
-      { key: 'Clothes', value: '' },
-      { key: 'Headgear', value: '' },
-      { key: 'Accessory', value: '' },
-    ],
-    icon: [{ width: 512, height: 512, url: 'ipfs://QmdrcEfQnWZhisc2bF4544xdJGHBQhWLaoGBXZSvrvSTxT', verification: { method: 'keccak256(bytes)', data: '0xeb14faa594192b57a2c4edb6ae212c1a6b3848409176e7c900141132d9902c85' } }],
-    backgroundImage: [],
-    assets: [],
-    images: [[{ width: 500, height: 500, url: imageUrl, verification: { method: 'keccak256(bytes)', data: _.keccak256(result) } }]],
-  },
-}
-//register
-contract.methods
-.register(txtSearchRef.current.value, selectedRecordType, _.toHex(rawMetadata)) //txtSearchRef.target.value_.padLeft(`0x1`, 63)
-.send({
-  from: auth.wallet,
-  value: price,
-})
-.then((res) => {
-  console.log(res) //res.events.tokenId
+          //metadata
+          const rawMetadata = {
+            LSP4Metadata: {
+              name: import.meta.env.VITE_NAME,
+              description: 'Link Your Wallet, Simplify Your address',
+              links: [
+                { title: 'Website', url: 'https://dropid.name' },
+                { title: 'Mint', url: 'https://dropid.name' },
+                { title: '𝕏', url: 'https://x.com/ArattaLabsDev' },
+                { title: 'Telegram', url: 'https://t.me/arattalabs' },
+              ],
+              attributes: [
+                { key: 'Username', value: txtSearchRef.current.value },
+                { key: 'Extension', value: recordTypeName },
+              ],
+              icon: [{ width: 512, height: 512, url: 'ipfs://QmT6Uq86pPiPCdeCDWwPx7ELcU5EiWj47UrJwfw6vUicch', verification: { method: 'keccak256(bytes)', data: '0x24988e896aab7746f7fcabc3c20826db685711391f888ad4be21b5516372c365' } }],
+              backgroundImage: [],
+              assets: [],
+              images: [[{ width: 500, height: 500, url: imageUrl, verification: { method: 'keccak256(bytes)', data: _.keccak256(result) } }]],
+            },
+          }
+          //register
+          contract.methods
+            .register(txtSearchRef.current.value, selectedRecordType, _.toHex(rawMetadata)) //txtSearchRef.target.value_.padLeft(`0x1`, 63)
+            .send({
+              from: auth.wallet,
+              value: price,
+            })
+            .then((res) => {
+              console.log(res) //res.events.tokenId
 
-  // Run partyjs
-  // party.confetti(document.querySelector(`#egg`), {
-  //   count: party.variation.range(20, 40),
-  //   shapes: ['egg', 'coin'],
-  // })
+              // Run partyjs
+              party.confetti(document.querySelector(`input`), {
+                count: party.variation.range(20, 40),
+                shapes: ['coin'],
+              })
 
-  toast.dismiss(t)
-}).catch((error) => {
-  console.log(error)
-  toast.dismiss(t)
-})
+              toast.dismiss(t)
+            })
+            .catch((error) => {
+              console.log(error)
+              toast.dismiss(t)
+            })
 
-//===========
-
+          //===========
         })
       })
-
-
     } catch (error) {
       console.log(error)
       toast.dismiss(t)
@@ -328,7 +321,7 @@ contract.methods
       <section className={`${styles.section} ms-motion-slideDownIn d-f-c flex-column`}>
         <div className={`${styles['__container']} __container`} data-width={`medium`}>
           <h1 className={`${styles['example']} d-f-c`}>
-            alex <span>.lyx</span>{' '}
+            fabian <span>.lukso</span>{' '}
           </h1>
 
           <div className={`${styles['form']}`}>
@@ -341,24 +334,22 @@ contract.methods
                     .filter((item) => item.name !== '')
                     .map((item, i) => (
                       <option key={i} value={item.id}>
-                        .{item.name}
+                        .{item.name} ({_.fromWei(_.toNumber(item.price), `ether`)} $LYX)
                       </option>
                     ))}
               </select>
               <button onClick={() => handleSearch()}>Search</button>
             </div>
           </div>
-   
+
           {freeToRegister === true && (
             <>
-              
               <div className={`text-center`}>
                 <p className={`text-center`}>Congratulations!🎉 The domain name is available for registration.</p>
-                <button className="btn pt-10 pb-10" onClick={() => handleRegister()}>
+                <button className=" pt-10 pb-10" onClick={() => handleRegister()}>
                   Register
                 </button>
               </div>
-              
             </>
           )}
 

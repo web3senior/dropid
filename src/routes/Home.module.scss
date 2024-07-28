@@ -194,8 +194,8 @@
   span {
     display: inline-block;
     background-color: #e8ecf5;
-    padding: 0 1rem;
-    border-radius: 4px;
+    padding: 0 0.6rem;
+    border-radius: var(--global-border-radius);
     overflow: hidden;
   }
 }
