@@ -1,0 +1,1910 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "ERC725Y_DataKeysValuesEmptyArray",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "ERC725Y_DataKeysValuesLengthMismatch",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "ERC725Y_MsgValueDisallowed",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "EnforcedPause",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "ExpectedPause",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "InsufficientBalance",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes",
+				"name": "storedData",
+				"type": "bytes"
+			}
+		],
+		"name": "InvalidExtensionAddress",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes",
+				"name": "data",
+				"type": "bytes"
+			}
+		],
+		"name": "InvalidFunctionSelector",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "LSP4TokenNameNotEditable",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "LSP4TokenSymbolNotEditable",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "LSP4TokenTypeNotEditable",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "callIndex",
+				"type": "uint256"
+			}
+		],
+		"name": "LSP8BatchCallFailed",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "LSP8CannotSendToAddressZero",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "LSP8CannotUseAddressZeroAsOperator",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "LSP8InvalidTransferBatch",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			}
+		],
+		"name": "LSP8NonExistentTokenId",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "operator",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			}
+		],
+		"name": "LSP8NonExistingOperator",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "address",
+				"name": "caller",
+				"type": "address"
+			}
+		],
+		"name": "LSP8NotTokenOperator",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "tokenOwner",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "address",
+				"name": "caller",
+				"type": "address"
+			}
+		],
+		"name": "LSP8NotTokenOwner",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "tokenReceiver",
+				"type": "address"
+			}
+		],
+		"name": "LSP8NotifyTokenReceiverContractMissingLSP1Interface",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "tokenReceiver",
+				"type": "address"
+			}
+		],
+		"name": "LSP8NotifyTokenReceiverIsEOA",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "operator",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			}
+		],
+		"name": "LSP8OperatorAlreadyAuthorized",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "caller",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "tokenOwner",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			}
+		],
+		"name": "LSP8RevokeOperatorNotAuthorized",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "LSP8TokenContractCannotHoldValue",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			}
+		],
+		"name": "LSP8TokenIdAlreadyMinted",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "LSP8TokenIdFormatNotEditable",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "LSP8TokenIdsDataEmptyArray",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "LSP8TokenIdsDataLengthMismatch",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "LSP8TokenOwnerCannotBeOperator",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "address",
+				"name": "oldOwner",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "LSP8TokenOwnerChanged",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes4",
+				"name": "functionSelector",
+				"type": "bytes4"
+			}
+		],
+		"name": "NoExtensionFoundForFunctionSelector",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "callerAddress",
+				"type": "address"
+			}
+		],
+		"name": "OwnableCallerNotTheOwner",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "OwnableCannotSetZeroAddressAsOwner",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "Reverted",
+		"type": "error"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "dataKey",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"internalType": "bytes",
+				"name": "dataValue",
+				"type": "bytes"
+			}
+		],
+		"name": "DataChanged",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint8",
+				"name": "metadata",
+				"type": "uint8"
+			}
+		],
+		"name": "MinimumLengthUpdated",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "operator",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "tokenOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"internalType": "bytes",
+				"name": "operatorNotificationData",
+				"type": "bytes"
+			}
+		],
+		"name": "OperatorAuthorizationChanged",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "operator",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "tokenOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"internalType": "bool",
+				"name": "notified",
+				"type": "bool"
+			},
+			{
+				"indexed": false,
+				"internalType": "bytes",
+				"name": "operatorNotificationData",
+				"type": "bytes"
+			}
+		],
+		"name": "OperatorRevoked",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "previousOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnershipTransferred",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			}
+		],
+		"name": "Paused",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "id",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			}
+		],
+		"name": "RecordTypeAdded",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "id",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			}
+		],
+		"name": "RecordTypeUpdated",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "bytes32",
+				"name": "node",
+				"type": "bytes32"
+			}
+		],
+		"name": "RenewalResolve",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "manager",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "metadata",
+				"type": "string"
+			}
+		],
+		"name": "ResolveUpdated",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			},
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "dataKey",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"internalType": "bytes",
+				"name": "dataValue",
+				"type": "bytes"
+			}
+		],
+		"name": "TokenIdDataChanged",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "operator",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "from",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"internalType": "bool",
+				"name": "force",
+				"type": "bool"
+			},
+			{
+				"indexed": false,
+				"internalType": "bytes",
+				"name": "data",
+				"type": "bytes"
+			}
+		],
+		"name": "Transfer",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			}
+		],
+		"name": "Unpaused",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "bytes32",
+				"name": "node",
+				"type": "bytes32"
+			}
+		],
+		"name": "newDomain",
+		"type": "event"
+	},
+	{
+		"stateMutability": "payable",
+		"type": "fallback"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_nodehash",
+				"type": "bytes32"
+			}
+		],
+		"name": "_freeToRegister",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "_recordTypeCounter",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "_resolveCounter",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string[]",
+				"name": "_reserved",
+				"type": "string[]"
+			},
+			{
+				"internalType": "string",
+				"name": "_metadata",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_manager",
+				"type": "address"
+			},
+			{
+				"internalType": "uint8",
+				"name": "_percentage",
+				"type": "uint8"
+			},
+			{
+				"internalType": "bool",
+				"name": "_pause",
+				"type": "bool"
+			}
+		],
+		"name": "addRecordType",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "operator",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes",
+				"name": "operatorNotificationData",
+				"type": "bytes"
+			}
+		],
+		"name": "authorizeOperator",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "tokenOwner",
+				"type": "address"
+			}
+		],
+		"name": "balanceOf",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes[]",
+				"name": "data",
+				"type": "bytes[]"
+			}
+		],
+		"name": "batchCalls",
+		"outputs": [
+			{
+				"internalType": "bytes[]",
+				"name": "results",
+				"type": "bytes[]"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"name": "blockStorage",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "bps",
+				"type": "uint256"
+			}
+		],
+		"name": "calcPercentage",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_recordTypeId",
+				"type": "bytes32"
+			}
+		],
+		"name": "checkRecordTypeId",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "appId",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "key",
+				"type": "bytes32"
+			}
+		],
+		"name": "delKey",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getBalance",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "dataKey",
+				"type": "bytes32"
+			}
+		],
+		"name": "getData",
+		"outputs": [
+			{
+				"internalType": "bytes",
+				"name": "dataValue",
+				"type": "bytes"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32[]",
+				"name": "dataKeys",
+				"type": "bytes32[]"
+			}
+		],
+		"name": "getDataBatch",
+		"outputs": [
+			{
+				"internalType": "bytes[]",
+				"name": "dataValues",
+				"type": "bytes[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32[]",
+				"name": "tokenIds",
+				"type": "bytes32[]"
+			},
+			{
+				"internalType": "bytes32[]",
+				"name": "dataKeys",
+				"type": "bytes32[]"
+			}
+		],
+		"name": "getDataBatchForTokenIds",
+		"outputs": [
+			{
+				"internalType": "bytes[]",
+				"name": "dataValues",
+				"type": "bytes[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "dataKey",
+				"type": "bytes32"
+			}
+		],
+		"name": "getDataForTokenId",
+		"outputs": [
+			{
+				"internalType": "bytes",
+				"name": "dataValue",
+				"type": "bytes"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "appId",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "key",
+				"type": "bytes32"
+			}
+		],
+		"name": "getKey",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes",
+				"name": "_rawMetadata",
+				"type": "bytes"
+			}
+		],
+		"name": "getMetadata",
+		"outputs": [
+			{
+				"internalType": "bytes",
+				"name": "",
+				"type": "bytes"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			}
+		],
+		"name": "getOperatorsOf",
+		"outputs": [
+			{
+				"internalType": "address[]",
+				"name": "",
+				"type": "address[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getRecordTypeNameList",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "bytes32",
+						"name": "id",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "percentage",
+						"type": "uint8"
+					},
+					{
+						"internalType": "address",
+						"name": "manager",
+						"type": "address"
+					}
+				],
+				"internalType": "struct Unigate.NameListStruct[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_manager",
+				"type": "address"
+			}
+		],
+		"name": "getResolveList",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "bytes32",
+						"name": "recordTypeId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "tokenId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "nodehash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "string",
+						"name": "metadata",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "manager",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "exp",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Unigate.ResolveStruct[]",
+				"name": "list",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_recordTypeId",
+				"type": "bytes32"
+			}
+		],
+		"name": "getResolveListByRecordType",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "bytes32",
+						"name": "recordTypeId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "tokenId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "nodehash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "string",
+						"name": "metadata",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "manager",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "exp",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Unigate.ResolveStruct[]",
+				"name": "list",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "operator",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			}
+		],
+		"name": "isOperatorFor",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "pause",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "paused",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"name": "recordType",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "metadata",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "dt",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "manager",
+				"type": "address"
+			},
+			{
+				"internalType": "uint8",
+				"name": "percentage",
+				"type": "uint8"
+			},
+			{
+				"internalType": "bool",
+				"name": "pause",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "_recordTypeId",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes",
+				"name": "_rawMetadata",
+				"type": "bytes"
+			}
+		],
+		"name": "register",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "removeExpiredResolve",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_resolveIndex",
+				"type": "bytes32"
+			}
+		],
+		"name": "removeResolveByIndex",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_nodehash",
+				"type": "bytes32"
+			}
+		],
+		"name": "removeResolveByNodehash",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_nodehash",
+				"type": "bytes32"
+			}
+		],
+		"name": "renewal",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "renounceOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"name": "resolve",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "recordTypeId",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "nodehash",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "string",
+				"name": "metadata",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "manager",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "exp",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_nodehash",
+				"type": "bytes32"
+			}
+		],
+		"name": "resolver",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "bytes32",
+						"name": "recordTypeId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "tokenId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "nodehash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "string",
+						"name": "metadata",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "manager",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "exp",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Unigate.ResolveStruct",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "operator",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bool",
+				"name": "notify",
+				"type": "bool"
+			},
+			{
+				"internalType": "bytes",
+				"name": "operatorNotificationData",
+				"type": "bytes"
+			}
+		],
+		"name": "revokeOperator",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "dataKey",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes",
+				"name": "dataValue",
+				"type": "bytes"
+			}
+		],
+		"name": "setData",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32[]",
+				"name": "dataKeys",
+				"type": "bytes32[]"
+			},
+			{
+				"internalType": "bytes[]",
+				"name": "dataValues",
+				"type": "bytes[]"
+			}
+		],
+		"name": "setDataBatch",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32[]",
+				"name": "tokenIds",
+				"type": "bytes32[]"
+			},
+			{
+				"internalType": "bytes32[]",
+				"name": "dataKeys",
+				"type": "bytes32[]"
+			},
+			{
+				"internalType": "bytes[]",
+				"name": "dataValues",
+				"type": "bytes[]"
+			}
+		],
+		"name": "setDataBatchForTokenIds",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "dataKey",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes",
+				"name": "dataValue",
+				"type": "bytes"
+			}
+		],
+		"name": "setDataForTokenId",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "appId",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "key",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "string",
+				"name": "val",
+				"type": "string"
+			}
+		],
+		"name": "setKey",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes4",
+				"name": "interfaceId",
+				"type": "bytes4"
+			}
+		],
+		"name": "supportsInterface",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "str",
+				"type": "string"
+			}
+		],
+		"name": "toLower",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "_recordTypeId",
+				"type": "bytes32"
+			}
+		],
+		"name": "toNodehash",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "tokenOwner",
+				"type": "address"
+			}
+		],
+		"name": "tokenIdsOf",
+		"outputs": [
+			{
+				"internalType": "bytes32[]",
+				"name": "",
+				"type": "bytes32[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			}
+		],
+		"name": "tokenOwnerOf",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "totalSupply",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "from",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "tokenId",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bool",
+				"name": "force",
+				"type": "bool"
+			},
+			{
+				"internalType": "bytes",
+				"name": "data",
+				"type": "bytes"
+			}
+		],
+		"name": "transfer",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address payable",
+				"name": "_to",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			}
+		],
+		"name": "transferBalance",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address[]",
+				"name": "from",
+				"type": "address[]"
+			},
+			{
+				"internalType": "address[]",
+				"name": "to",
+				"type": "address[]"
+			},
+			{
+				"internalType": "bytes32[]",
+				"name": "tokenId",
+				"type": "bytes32[]"
+			},
+			{
+				"internalType": "bool[]",
+				"name": "force",
+				"type": "bool[]"
+			},
+			{
+				"internalType": "bytes[]",
+				"name": "data",
+				"type": "bytes[]"
+			}
+		],
+		"name": "transferBatch",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "unpause",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint8",
+				"name": "_len",
+				"type": "uint8"
+			}
+		],
+		"name": "updateMinimumLength",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_recordTypeId",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string[]",
+				"name": "_reserved",
+				"type": "string[]"
+			},
+			{
+				"internalType": "string",
+				"name": "_metadata",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_manager",
+				"type": "address"
+			},
+			{
+				"internalType": "uint8",
+				"name": "_percentage",
+				"type": "uint8"
+			},
+			{
+				"internalType": "bool",
+				"name": "_pause",
+				"type": "bool"
+			}
+		],
+		"name": "updateRecordType",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_nodehash",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "address",
+				"name": "_manager",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_metadata",
+				"type": "string"
+			},
+			{
+				"internalType": "bytes",
+				"name": "_rawMetadata",
+				"type": "bytes"
+			}
+		],
+		"name": "updateResolve",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "withdraw",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"stateMutability": "payable",
+		"type": "receive"
+	}
+]
