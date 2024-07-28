@@ -272,6 +272,8 @@ function Home({ title }) {
                 shapes: ['coin'],
               })
 
+              toast.success(`Transaction has been confirmed! Check out your NFTs`)
+
               toast.dismiss(t)
             })
             .catch((error) => {
