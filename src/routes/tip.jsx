@@ -16,9 +16,7 @@ export default function Tips({ title }) {
         <article className={`text-justify`}>
           <p>Owning a Web3 username on Dropid is like owning a piece of digital real estate. It&#39;s your unique identity in the decentralized world. Here are some tips to help you choose and acquire the perfect Web3 username.</p>
 
-          <p>
-            <h3>Choose a Memorable Username</h3>
-          </p>
+          <h3>Choose a Memorable Username</h3>
 
           <ul>
             <li>
@@ -35,9 +33,7 @@ export default function Tips({ title }) {
             </li>
           </ul>
 
-          <p>
-            <h3>Understand the Value Proposition</h3>
-          </p>
+          <h3>Understand the Value Proposition</h3>
 
           <ul>
             <li>
@@ -51,9 +47,7 @@ export default function Tips({ title }) {
             </li>
           </ul>
 
-          <p>
-            <h3>Secure Your Wallet</h3>
-          </p>
+          <h3>Secure Your Wallet</h3>
 
           <ul>
             <li>
@@ -67,9 +61,7 @@ export default function Tips({ title }) {
             </li>
           </ul>
 
-          <p>
-            <h3>Participate in Auctions</h3>
-          </p>
+          <h3>Participate in Auctions</h3>
 
           <ul>
             <li>
@@ -83,9 +75,7 @@ export default function Tips({ title }) {
             </li>
           </ul>
 
-          <p>
-            <h3>Utilize Dropid&#39;s Features</h3>
-          </p>
+          <h3>Utilize Dropid&#39;s Features</h3>
 
           <ul>
             <li>

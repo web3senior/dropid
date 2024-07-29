@@ -17,10 +17,17 @@
     }
   }
 
-  p {
-    margin: 0 0 0.8rem 0;
-    color: #21212e;
-    line-height: 1.7rem;
+  article {
+    margin-top: 2rem;
+
+    h3 {
+      margin: 1rem 0;
+    }
+
+    p {
+      color: #64748b;
+      line-height: 1.8rem;
+    }
   }
 }
 

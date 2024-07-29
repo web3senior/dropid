@@ -36,7 +36,7 @@ export default function Ecosystem({ title }) {
             ecosystem.length > 0 &&
             ecosystem.map((item, i) => {
               return (
-                <div className={`${styles['card']}`}>
+                <div key={i} className={`${styles['card']}`}>
                   <figure>
                     <img src={`https://ipfs.io/ipfs/${item.cover}`} />
                   </figure>
