@@ -35,26 +35,30 @@ export default function About({ title }) {
           <p>Shaping the Future of Web3 Identities</p>
         </div>
       </div>
+
+      <div className={`__container`} data-width={`large`}>
+        <article>
+          <p>
+          We believe everyone deserves a unique and ownable presence in the digital world. Dropid empowers users to claim their identity with a personalized Web3 username. Built on the robust LUKSO blockchain, we offer secure, tradeable, and verifiable digital identities.
+          </p>    <p>
+Dropid is a product of Aratta Labs, a team dedicated to pushing the boundaries of Web3. Our smart contract, built based on the <a href={`https://eips.ethereum.org/EIPS/eip-137`} target={`_blank`}>ERC-137 (Ethereum Domain Name Service)</a> Ethereum Improvement Proposals, underpins the core functionality of Dropid, enabling a decentralized and user-centric experience.
+</p>    <p>
+Join us in shaping the future of the internet.
+</p>       
+        </article>
+
+        <Heading title={`Roadmap`} subTitle={`Coming soon`}></Heading>
+      </div>
+
       <div className={`${styles['container']} __container ms-motion-slideUpIn`} data-width={`xxlarge`}>
         <div className={`__container`} data-width={`large`}>
-          <article>
-            <p>
-              We believe everyone deserves a unique and ownable presence in the digital world. Our platform empowers users to claim their identity with a personalized Web3 username. Built on the robust LUKSO blockchain, Dropid offers secure,
-              tradeable, and verifiable digital identities. Join us in shaping the future of the internet.
-            </p>
-          </article>
-        </div>
-
-        <div className="grid grid--fit" style={{ '--data-width': `200px`, columnGap: `1rem`, rowGap: '1rem' }}>
-          <div className={`__container`} data-width={`large`}>
-            <Heading title={`FAQs`} subTitle={`Frequently Asked Questions`}></Heading>
-            {faq.map((item, i) => (
-              <details className={`transition`} key={i}>
-                <summary>{item.q}</summary>
-                <div dangerouslySetInnerHTML={{ __html: item.a }} />
-              </details>
-            ))}
-          </div>
+          <Heading title={`FAQs`} subTitle={`Frequently Asked Questions`}></Heading>
+          {faq.map((item, i) => (
+            <details className={`transition`} key={i}>
+              <summary>{item.q}</summary>
+              <div dangerouslySetInnerHTML={{ __html: item.a }} />
+            </details>
+          ))}
         </div>
       </div>
     </section>

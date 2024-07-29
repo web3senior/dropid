@@ -48,12 +48,12 @@ export default function Pricing({ title }) {
 
       if (res.length) {
         res.map((item, i) => {
-          tableBodyRef.current.innerHTML += `<tr class="animate__animated animate__fadeInDown" style="--animate-duration: .${i * 2}s;">
+          tableBodyRef.current.innerHTML += `<tr class="animate__animated animate__fadeInDown text-center" style="--animate-duration: .${i * 2}s;">
               <th scope="row" class="text-left">
                 .${item.name}
               </th>
               <td> ${item.manager.slice(0, 4)}...${item.manager.slice(38)}</td>
-              <td>${_.fromWei(item.price, `ether`)} ⏣LYX</td>
+              <td><span class="badge badge-purpink">${_.fromWei(item.price, `ether`)} ⏣LYX</span></td>
               <td>${_.toNumber(item.percentage)} %</td>
               <td>${100 - _.toNumber(item.percentage)} %</td>
             </tr>`

@@ -133,8 +133,7 @@ function Home({ title }) {
       return
     }
 
-    // const recordTypeName = recordType.filter((item, i) => item.id.toString() === recordTypeRef.current.value.toString())[0].name
-    // const nodehash = _.keccak256(_.toHex(`${txtSearchRef.current.value}.${recordTypeName}`))
+    const t = toast.loading(`Searching`)
 
     contract.methods
       .toNodehash(txtSearchRef.current.value, selectedRecordType)
@@ -147,6 +146,7 @@ function Home({ title }) {
           .then((res) => {
             console.log(res)
             setFreeToRegister(!res)
+            toast.dismiss(t)
           })
       })
   }
@@ -324,7 +324,7 @@ function Home({ title }) {
 
           <div className={`${styles['form']}`}>
             <div className={`${styles['form__container']} d-flex flex-row`}>
-              <input type={`text`} placeholder={`Search names or addresses`} list={`apps`} min={2} accessKey={`s`} className={``} id={`username`} ref={txtSearchRef} />
+              <input type={`text`} placeholder={`Search names or addresses`} onKeyUp={(e) => (e.code === `Enter` ? handleSearch() : '')} list={`apps`} min={2} accessKey={`s`} className={``} id={`username`} ref={txtSearchRef} />
               <select ref={recordTypeRef} defaultValue={selectedRecordType} onChange={(e) => setSelectedRecordType(e.target.value)}>
                 {recordType &&
                   recordType.length > 0 &&

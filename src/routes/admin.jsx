@@ -298,6 +298,13 @@ function Admin({ title }) {
       from: auth.wallet,
     })
 
+    const handleUpdateRecordType = ()=>{
+    }
+await contract.methods.updateRecordType(``).send({
+  from: auth.wallet,
+})
+    }
+
   useEffect(() => {
     getRecordType().then(async (res) => {
       console.log(res)
@@ -333,7 +340,9 @@ function Admin({ title }) {
               </button>
             </div>
           </div>
+
           <button onClick={() => handleWithdraw()}>Withdraw</button>
+            <button onClick={() => handleUpdateRecordType()}>update RecordType</button>
           <Link to={`/`} className="btn mt-10" style={{ background: '#222' }}>
             Back
           </Link>
