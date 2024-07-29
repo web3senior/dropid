@@ -8,7 +8,7 @@ import toast, { Toaster } from 'react-hot-toast'
 import Web3 from 'web3'
 
 export const ABI =ABIobject
-export const PROVIDER = window.lukso || window.ethereum 
+export const PROVIDER = import.meta.env.VITE_LUKSO_PROVIDER_TESTNET || window.lukso || window.ethereum 
 export const web3 = new Web3(PROVIDER)
 export const contract = new web3.eth.Contract(ABI, import.meta.env.VITE_DROPID_CONTRACT_TESTNET)
 export const _ = web3.utils
