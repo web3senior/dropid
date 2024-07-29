@@ -39,12 +39,17 @@ export default function About({ title }) {
       <div className={`__container`} data-width={`large`}>
         <article>
           <p>
-          We believe everyone deserves a unique and ownable presence in the digital world. Dropid empowers users to claim their identity with a personalized Web3 username. Built on the robust LUKSO blockchain, we offer secure, tradeable, and verifiable digital identities.
-          </p>    <p>
-Dropid is a product of Aratta Labs, a team dedicated to pushing the boundaries of Web3. Our smart contract, built based on the <a href={`https://eips.ethereum.org/EIPS/eip-137`} target={`_blank`}>ERC-137 (Ethereum Domain Name Service)</a> Ethereum Improvement Proposals, underpins the core functionality of Dropid, enabling a decentralized and user-centric experience.
-</p>    <p>
-Join us in shaping the future of the internet.
-</p>       
+            We believe everyone deserves a unique and ownable presence in the digital world. Dropid empowers users to claim their identity with a personalized Web3 username. Built on the robust LUKSO blockchain, we offer secure, tradeable, and
+            verifiable digital identities.
+          </p>{' '}
+          <p>
+            Dropid is a product of Aratta Labs, a team dedicated to pushing the boundaries of Web3. Our smart contract, built based on the{' '}
+            <a href={`https://eips.ethereum.org/EIPS/eip-137`} target={`_blank`}>
+              ERC-137 (Ethereum Domain Name Service)
+            </a>{' '}
+            Ethereum Improvement Proposals, underpins the core functionality of Dropid, enabling a decentralized and user-centric experience.
+          </p>{' '}
+          <p>Join us in shaping the future of the internet.</p>
         </article>
 
         <Heading title={`Roadmap`} subTitle={`Coming soon`}></Heading>
