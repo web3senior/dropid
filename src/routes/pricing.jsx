@@ -69,12 +69,6 @@ export default function Shop({ title }) {
               <h2>{taotlRecordType}</h2>
             </div>
           </div>
-          <div className={`card`}>
-            <div className={`card__body`}>
-              <p>Integrations</p>
-              <h2>1</h2>
-            </div>
-          </div>
         </div>
 
         <h3 className={`mt-40`}>Extensions</h3>
