@@ -6,18 +6,14 @@ export default function Tips({ title }) {
 
   return (
     <section className={styles.section}>
-      <div className={`${styles['alert']} ms-motion-slideUpIn`}>
+      <div className={`${styles['page-hero']} ms-motion-slideUpIn`}>
         <div className={`__container`} data-width={`large`}>
-          <h2>Unleash the Power of Your Dropid Username</h2>
-          <p>Own a unique, tradeable username that unlocks a new level of control and personalization in the decentralized web.</p>
+          <h2>Dropid Tips</h2>
+          <p>our Guide to the Perfect Web3 Username</p>
         </div>
       </div>
       <div className={`${styles['container']} __container ms-motion-slideUpIn`} data-width={`large`}>
         <article className={`text-justify`}>
-          <p>
-            <h2>Introduction</h2>
-          </p>
-
           <p>Owning a Web3 username on Dropid is like owning a piece of digital real estate. It&#39;s your unique identity in the decentralized world. Here are some tips to help you choose and acquire the perfect Web3 username.</p>
 
           <p>

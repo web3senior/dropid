@@ -29,43 +29,20 @@ export default function About({ title }) {
 
   return (
     <section className={styles.section}>
+      <div className={`${styles['page-hero']} ms-motion-slideUpIn`}>
+        <div className={`__container`} data-width={`large`}>
+          <h2> About Us</h2>
+          <p>Shaping the Future of Web3 Identities</p>
+        </div>
+      </div>
       <div className={`${styles['container']} __container ms-motion-slideUpIn`} data-width={`xxlarge`}>
         <div className={`__container`} data-width={`large`}>
-<article>
-<p>Your Dropid username is more than just an address on the blockchain; it&#39;s your digital identity on Web3. With Dropid, you can:</p>
-
-<ul>
-  <li>
-    <strong>Own a unique and memorable username:</strong> Ditch the long and cryptic wallet addresses. Claim your personalized Dropid and make it easy for others to find you.
-  </li>
-  <li>
-    <strong>Showcase your profile with ease:</strong> Integrate your Dropid username with Telegram&#39;s Universal Profile Bot. When someone sends their Dropid username to the bot, your profile information stored on the LUKSO blockchain
-    will be instantly retrieved, showcasing your digital presence.
-  </li>
-  <li>
-    <strong>Seamlessly send and receive funds:</strong> Sending and receiving funds on Web3 is about to get easier. We&#39;re developing a dedicated page where you can send funds using your Dropid username, complete with multi-send
-    functionality for added convenience.
-  </li>
-</ul>
-
-<p>
-  <strong>Here&#39;s a quick guide on how to get started:</strong>
-</p>
-
-<ol>
-  <li>
-    <strong>Mint your Dropid username:</strong> Visit the main page of our DApp and follow the simple steps to mint your unique username.
-  </li>
-  <li>
-    <strong>Integrate with Telegram:</strong> Follow the instructions provided to connect your Dropid username with Telegram&#39;s Universal Profile Bot.
-  </li>
-  <li>
-    <strong>Start using your Dropid:</strong> Share your Dropid username with friends, colleagues, and online communities. Let them discover your Web3 profile with a single click.
-  </li>
-</ol>
-
-<b>Stay tuned!</b>
-</article>
+          <article>
+            <p>
+              We believe everyone deserves a unique and ownable presence in the digital world. Our platform empowers users to claim their identity with a personalized Web3 username. Built on the robust LUKSO blockchain, Dropid offers secure,
+              tradeable, and verifiable digital identities. Join us in shaping the future of the internet.
+            </p>
+          </article>
         </div>
 
         <div className="grid grid--fit" style={{ '--data-width': `200px`, columnGap: `1rem`, rowGap: '1rem' }}>

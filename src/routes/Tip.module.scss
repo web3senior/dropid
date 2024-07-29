@@ -1,14 +1,19 @@
 .section {
   background-color: var(--white);
-  
-  .alert {
-    background-color: #f5f5f5;
-    padding: 2rem;
+
+  .page-hero {
+    background-color: var(--global-background-color);
+    padding: 4rem 1rem;
     margin-bottom: 2rem;
+
+    h2 {
+      font: 600 calc(1rem + 1vw) 'Libre Franklin';
+    }
 
     p {
       text-wrap: balance;
       line-height: 1.2rem;
+      font: 400 calc(.6rem + .5vw) 'Libre Franklin';
     }
   }
 
@@ -17,4 +22,8 @@
     color: #21212e;
     line-height: 1.7rem;
   }
+}
+
+.container {
+  padding: 0 1rem;
 }

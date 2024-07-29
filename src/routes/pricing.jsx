@@ -3,7 +3,7 @@ import { useLoaderData, defer, Form, Await, useRouteError, Link, useNavigate } f
 import { useAuth, web3, _, contract } from '../contexts/AuthContext'
 import { Title } from './helper/DocumentTitle'
 import Icon from './helper/MaterialIcon'
-import styles from './Shop.module.scss'
+import styles from './Pricing.module.scss'
 
 export const loader = async () => {
   return defer({ key: 'val' })
@@ -73,11 +73,13 @@ export default function Shop({ title }) {
             <div className={`card__body`}>
               <p>Integrations</p>
               <h2>1</h2>
-            </div>
-          </div>
+              </div>
+              </div>
         </div>
 
         <h3 className={`mt-40`}>Extensions</h3>
+        <div className={`card`}>
+        <div className={`card__body`}>
         <div className={`${styles['extension']} table-responsive`}>
           <table className={`data-table`}>
             <caption>Extension list</caption>
@@ -87,7 +89,7 @@ export default function Shop({ title }) {
                 <th scope="col">Manager</th>
                 <th scope="col">Price</th>
                 <th scope="col">Manager %</th>
-                <th scope="col">Owner %</th>
+                <th scope="col">{import.meta.env.VITE_NAME} %</th>
               </tr>
             </thead>
             <tbody>
@@ -106,6 +108,8 @@ export default function Shop({ title }) {
                 })}
             </tbody>
           </table>
+        </div>
+        </div>
         </div>
       </div>
     </section>

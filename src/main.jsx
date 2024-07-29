@@ -12,7 +12,7 @@ const UserLayout = lazy(() => import('./routes/userLayout.jsx'))
 import SplashScreen from './routes/splashScreen.jsx'
 import Home, { loader as homeLoader } from './routes/home.jsx'
 import About from './routes/about.jsx'
-import Shop from './routes/shop.jsx'
+import Pricing from './routes/pricing.jsx'
 import TermsOfService from './routes/terms-of-service.jsx'
 import PrivacyPolicy from './routes/privacy-policy.jsx'
 import Ecosystem from './routes/ecosystem.jsx'
@@ -55,8 +55,8 @@ const router = createBrowserRouter([
         element: <Tip title={`Tip`} />,
       },
       {
-        path: `shop`,
-        element: <Shop title={`Shop`} />,
+        path: `pricing`,
+        element: <Pricing title={`Pricing`} />,
       },
       {
         path: `admin`,

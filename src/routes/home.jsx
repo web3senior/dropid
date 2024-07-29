@@ -332,7 +332,7 @@ function Home({ title }) {
                     .filter((item) => item.name !== '')
                     .map((item, i) => (
                       <option key={i} value={item.id}>
-                        .{item.name} ({_.fromWei(_.toNumber(item.price), `ether`)} $LYX)
+                        .{item.name}
                       </option>
                     ))}
               </select>

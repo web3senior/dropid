@@ -28,10 +28,10 @@ const links = [
     path: ``,
   },
   {
-    name: 'Shop',
+    name: 'Pricing',
     icon: null,
     target: '',
-    path: `shop`,
+    path: `pricing`,
   },
   {
     name: 'Ecosystems',
