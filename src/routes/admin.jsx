@@ -300,10 +300,6 @@ function Admin({ title }) {
 
     const handleUpdateRecordType = ()=>{
     }
-await contract.methods.updateRecordType(``).send({
-  from: auth.wallet,
-})
-    }
 
   useEffect(() => {
     getRecordType().then(async (res) => {
