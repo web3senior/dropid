@@ -73,43 +73,47 @@ export default function Shop({ title }) {
             <div className={`card__body`}>
               <p>Integrations</p>
               <h2>1</h2>
-              </div>
-              </div>
+            </div>
+          </div>
         </div>
 
         <h3 className={`mt-40`}>Extensions</h3>
         <div className={`card`}>
-        <div className={`card__body`}>
-        <div className={`${styles['extension']} table-responsive`}>
-          <table className={`data-table`}>
-            <caption>Extension list</caption>
-            <thead>
-              <tr>
-                <th scope="col" className={`text-left`}>Extension</th>
-                <th scope="col">Manager</th>
-                <th scope="col">Price</th>
-                <th scope="col">Manager %</th>
-                <th scope="col">{import.meta.env.VITE_NAME} %</th>
-              </tr>
-            </thead>
-            <tbody>
-              {recordTypeList &&
-                recordTypeList.length > 0 &&
-                recordTypeList.map((item, i) => {
-                  return (
-                    <tr key={i} className={`text-center`}>
-                      <th scope="row" className={`text-left`}>.{item.name}</th>
-                      <td>{item.manager}</td>
-                      <td>{_.fromWei(item.price, `ether`)} ⏣LYX</td>
-                      <td>{_.toNumber(item.percentage)} %</td>
-                      <td>{100 - _.toNumber(item.percentage)} %</td>
-                    </tr>
-                  )
-                })}
-            </tbody>
-          </table>
-        </div>
-        </div>
+          <div className={`card__body`}>
+            <div className={`${styles['extension']} table-responsive`}>
+              <table className={`data-table`}>
+                <caption>Extension list</caption>
+                <thead>
+                  <tr>
+                    <th scope="col" className={`text-left`}>
+                      Extension
+                    </th>
+                    <th scope="col">Manager</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Manager %</th>
+                    <th scope="col">{import.meta.env.VITE_NAME} %</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {recordTypeList &&
+                    recordTypeList.length > 0 &&
+                    recordTypeList.map((item, i) => {
+                      return (
+                        <tr key={i} className={`text-center`}>
+                          <th scope="row" className={`text-left`}>
+                            .{item.name}
+                          </th>
+                          <td> {`${item.manager.slice(0, 4)}...${item.manager.slice(38)}`}</td>
+                          <td>{_.fromWei(item.price, `ether`)} ⏣LYX</td>
+                          <td>{_.toNumber(item.percentage)} %</td>
+                          <td>{100 - _.toNumber(item.percentage)} %</td>
+                        </tr>
+                      )
+                    })}
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </section>
