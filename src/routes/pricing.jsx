@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useLoaderData, defer, Form, Await, useRouteError, Link, useNavigate } from 'react-router-dom'
 import { useAuth, web3, _, contract } from '../contexts/AuthContext'
 import { Title } from './helper/DocumentTitle'
@@ -9,20 +9,21 @@ export const loader = async () => {
   return defer({ key: 'val' })
 }
 
-export default function Shop({ title }) {
+export default function Pricing({ title }) {
   Title(title)
   const [loaderData, setLoaderData] = useState(useLoaderData())
   const [isLoading, setIsLoading] = useState(true)
   const [taotlRecordType, setTotalRecordType] = useState(0)
   const [totalResolve, setTotalResolve] = useState(0)
   const [recordTypeList, setRecordTypeList] = useState(0)
+  const auth = useAuth()
+  const navigate = useNavigate()
+  const tableBodyRef = useRef()
 
   const getTotalRecordType = async () => await contract.methods._recordTypeCounter().call()
   const getTotalResolve = async () => await contract.methods._resolveCounter().call()
   const getResolveList = async (wallet) => await contract.methods.getResolveList(wallet).call()
   const getRecordTypeNameList = async () => await contract.methods.getRecordTypeNameList().call()
-
-  const auth = useAuth()
 
   useEffect(() => {
     getTotalRecordType().then((res) => {
@@ -44,6 +45,20 @@ export default function Shop({ title }) {
       console.log(res)
       setRecordTypeList(res)
       setIsLoading(false)
+
+      if (res.length) {
+        res.map((item, i) => {
+          tableBodyRef.current.innerHTML += `<tr class="animate__animated animate__fadeInDown" style="--animate-duration: .${i * 2}s;">
+              <th scope="row" class="text-left">
+                .${item.name}
+              </th>
+              <td> ${item.manager.slice(0, 4)}...${item.manager.slice(38)}</td>
+              <td>${_.fromWei(item.price, `ether`)} ⏣LYX</td>
+              <td>${_.toNumber(item.percentage)} %</td>
+              <td>${100 - _.toNumber(item.percentage)} %</td>
+            </tr>`
+        })
+      }
     })
   }, [])
 
@@ -88,23 +103,7 @@ export default function Shop({ title }) {
                     <th scope="col">{import.meta.env.VITE_NAME} %</th>
                   </tr>
                 </thead>
-                <tbody>
-                  {recordTypeList &&
-                    recordTypeList.length > 0 &&
-                    recordTypeList.map((item, i) => {
-                      return (
-                        <tr key={i} className={`text-center`}>
-                          <th scope="row" className={`text-left`}>
-                            .{item.name}
-                          </th>
-                          <td> {`${item.manager.slice(0, 4)}...${item.manager.slice(38)}`}</td>
-                          <td>{_.fromWei(item.price, `ether`)} ⏣LYX</td>
-                          <td>{_.toNumber(item.percentage)} %</td>
-                          <td>{100 - _.toNumber(item.percentage)} %</td>
-                        </tr>
-                      )
-                    })}
-                </tbody>
+                <tbody ref={tableBodyRef}></tbody>
               </table>
             </div>
           </div>
