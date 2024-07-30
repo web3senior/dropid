@@ -317,48 +317,50 @@ function Home({ title }) {
   return (
     <>
       <section className={`${styles.section} ms-motion-slideDownIn`}>
-        <div className={`${styles['__container']} __container`} data-width={`medium`}>
-          <h1 className={`${styles['example']}`}>
-            fabian<span>.up</span>
-          </h1>
+        <div className={`${styles['wrapper']} w-100`}>
+          <div className={`__container`} data-width={`medium`}>
+            <h1 className={`${styles['example']}`}>
+              fabian<span>.up</span>
+            </h1>
 
-          <div className={`${styles['form']}`}>
-            <div className={`${styles['form__container']} d-flex flex-row`}>
-              <input type={`text`} placeholder={`Search names or addresses`} onKeyUp={(e) => (e.code === `Enter` ? handleSearch() : '')} list={`apps`} min={2} accessKey={`s`} className={``} id={`username`} ref={txtSearchRef} />
-              <select ref={recordTypeRef} defaultValue={selectedRecordType} onChange={(e) => setSelectedRecordType(e.target.value)}>
-                {recordType &&
-                  recordType.length > 0 &&
-                  recordType
-                    .filter((item) => item.name !== '')
-                    .map((item, i) => (
-                      <option key={i} value={item.id}>
-                        .{item.name}
-                      </option>
-                    ))}
-              </select>
-              <button onClick={() => handleSearch()}>Search</button>
+            <div className={`${styles['form']}`}>
+              <div className={`${styles['form__container']} d-flex flex-row`}>
+                <input type={`text`} placeholder={`Search names or addresses`} onKeyUp={(e) => (e.code === `Enter` ? handleSearch() : '')} list={`apps`} min={2} accessKey={`s`} className={``} id={`username`} ref={txtSearchRef} />
+                <select ref={recordTypeRef} defaultValue={selectedRecordType} onChange={(e) => setSelectedRecordType(e.target.value)}>
+                  {recordType &&
+                    recordType.length > 0 &&
+                    recordType
+                      .filter((item) => item.name !== '')
+                      .map((item, i) => (
+                        <option key={i} value={item.id}>
+                          .{item.name}
+                        </option>
+                      ))}
+                </select>
+                <button onClick={() => handleSearch()}>Search</button>
+              </div>
             </div>
           </div>
-
-          {freeToRegister === true && (
-            <>
-              <div className={`text-center`}>
-                <p className={`text-center`}>Congratulations!🎉 The domain name is available for registration.</p>
-                <button className=" pt-10 pb-10" onClick={() => handleRegister()}>
-                  Register
-                </button>
-              </div>
-            </>
-          )}
-
-          {freeToRegister === false && (
-            <>
-              <div className={`text-center`}>
-                <p className={`text-center text-danger`}>⛔ The name you are trying to register is already registered.</p>
-              </div>
-            </>
-          )}
         </div>
+
+        {freeToRegister === true && (
+          <>
+            <div className={`text-center`}>
+              <p className={`text-center`}>Congratulations!🎉 The domain name is available for registration.</p>
+              <button className=" pt-10 pb-10" onClick={() => handleRegister()}>
+                Register
+              </button>
+            </div>
+          </>
+        )}
+
+        {freeToRegister === false && (
+          <>
+            <div className={`text-center`}>
+              <p className={`text-center text-danger`}>⛔ The name you are trying to register is already registered.</p>
+            </div>
+          </>
+        )}
       </section>
     </>
   )

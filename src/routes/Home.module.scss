@@ -4,16 +4,20 @@
   user-select: none;
   height: 100%;
   padding: 8rem 0;
-  background-image: url('./../assets/block.svg');
-  background-position: center 8rem;
-  background-size: 80%;
-  background-repeat: no-repeat;
 
   ul {
     li {
       &:first-child {
       }
     }
+  }
+
+  .wrapper {
+    background-image: url('./../assets/block.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 4rem 0 0 0;
   }
 
   a {
@@ -45,20 +49,15 @@
   }
 }
 
-@keyframes floating {
-  0% {
-    transform: translate(0, -0.1rem);
-  }
-  50% {
-    transform: translate(0, 0.8rem);
-  }
-  100% {
-    transform: translate(0, -0.1rem);
-  }
-}
-.statistics {
-  > li {
-    column-gap: 4rem;
+.example {
+  column-gap: 1rem;
+  text-align: center;
+  font-size: calc(1.2rem + 2.5vw);
+  margin: 1rem auto;
+
+  span {
+    position: relative;
+    color: var(--color-primary);
   }
 }
 
@@ -77,7 +76,6 @@
     --tw-shadow-colored: 0px 9px 4px var(--tw-shadow-color), 0px 5px 3px var(--tw-shadow-color), 0px 2px 2px var(--tw-shadow-color), 0px 1px 1px var(--tw-shadow-color), 0px 0px 0px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
     border-radius: inherit;
-
     &:after {
       content: '';
       width: 24px;
@@ -138,63 +136,5 @@
     border-top-right-radius: inherit;
     border-bottom-right-radius: inherit;
     background-image: linear-gradient(269.68deg, #febdff 0.28%, #fc72ff 99.72%);
-  }
-}
-
-.hero {
-  position: relative;
-  row-gap: 1rem;
-
-  &__card {
-    position: relative;
-    border-radius: var(--global-border-radius);
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
-
-    &__body {
-      -ms-flex: 1 1 auto;
-      flex: 1 1 auto;
-      border-radius: inherit;
-      padding: 1rem 1.5rem;
-      background-color: #f8fafb;
-
-      p {
-        line-height: 1.1rem;
-        font-weight: 400;
-        color: #656565;
-      }
-    }
-  }
-
-  h1 {
-    font-size: 1.5rem;
-    text-wrap: balance;
-    font-weight: 900;
-    text-align: center;
-    @include small-down() {
-      font-size: 5vw;
-    }
-  }
-
-  span {
-    font-size: 2rem;
-  }
-
-  img {
-    width: 24px;
-    filter: grayscale(100%);
-  }
-}
-
-.example {
-  column-gap: 1rem;
-  text-align: center;
-  font-size: calc(1.2rem + 2.5vw);
-  margin: 1rem auto;
-
-  span {
-    position: relative;
-    color: var(--color-primary);
   }
 }
