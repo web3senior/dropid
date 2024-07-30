@@ -39,8 +39,9 @@ export default function About({ title }) {
       <div className={`__container`} data-width={`large`}>
         <article>
           <p>
-            We believe everyone deserves a unique and ownable presence in the digital world. Dropid empowers users to claim their identity with a personalized Web3 username. Built on the robust LUKSO blockchain, we offer secure, tradeable, and
-            verifiable digital identities.
+            We are committed to ensuring that everyone has a unique and truly personalized presence in the digital space. Dropid allows users to establish their identity with a customized Web3 username. Utilizing the strong LUKSO blockchain, we
+            provide secure, tradable, and verifiable digital identities. Dropid is a creation of Aratta Labs, a team dedicated to pushing the boundaries of Web3. Our smart contract, developed based on the Ethereum Improvement Proposals (EIP) for
+            Ethereum Domain Name Service, forms the foundation of Dropid, delivering a decentralized and user-focused experience. Come and join us in shaping the future of the internet.
           </p>{' '}
           <p>
             Dropid is a product of Aratta Labs, a team dedicated to pushing the boundaries of Web3. Our smart contract, built based on the{' '}
