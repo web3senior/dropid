@@ -370,7 +370,7 @@ function Home({ title }) {
                   <Icon name={`paid`} />
                   <div className={`d-flex flex-column`}>
                   <span>Tradeable</span>
-                  <small>Your username is a valuable digital asset that can be bought, sold, or traded on our marketplace.</small>
+                  <small>Your username is a valuable digital asset that can be bought, sold, or traded on the marketplace.</small>
                   </div>
                 </li>
                 <li className={`d-flex align-items-center`}>
@@ -402,8 +402,12 @@ function Home({ title }) {
                   </div>
                 </li>
               </ul>
-           
           </div>
+
+          <pre className={`mt-40 ms-depth-4`}>
+          <p style={{opacity: .5}}>// Fetch data effortlessly with Dropid SDK 🤯</p>
+          const lyxAddress = LUKSO.getAddressRecord({JSON.stringify({ nodehash: 'fabian.up'} )})
+          </pre>
         </div>
       </section>
     </>
