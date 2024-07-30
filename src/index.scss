@@ -1,5 +1,5 @@
 :root {
-  font-family: var(--ff-segoe);
+  font-family: 'GeistVF', var(--ff-segoe);
   font-weight: 400;
   line-height: 1.4;
   font-size: 14px;
@@ -20,7 +20,8 @@ html,
 body {
   height: 100%;
   overflow-x: hidden;
-
+  font-family: 'GeistVF', var(--ff-segoe) !important;
+  
   ::selection {
     color: var(--white);
     background-color: var(--color-primary);

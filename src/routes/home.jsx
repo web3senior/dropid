@@ -1,7 +1,6 @@
 import { Suspense, useState, useEffect, useRef } from 'react'
 import { useLoaderData, defer, Form, Await, useRouteError, Link, useNavigate } from 'react-router-dom'
 import { Title } from './helper/DocumentTitle'
-
 import Icon from './helper/MaterialIcon'
 import Shimmer from './helper/Shimmer'
 import { getTournamentList } from './../util/api'
