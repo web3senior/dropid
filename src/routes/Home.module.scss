@@ -189,14 +189,11 @@
 .example {
   column-gap: 1rem;
   text-align: center;
-  font-size: calc(1.2rem + 1.5vw);
+  font-size: calc(1.2rem + 2.5vw);
   margin: 1rem auto;
 
   span {
-    display: inline-block;
-    background-color: #e8ecf5;
-    padding: 0 0.6rem;
-    border-radius: var(--global-border-radius);
-    overflow: hidden;
+    position: relative;
+    color: var(--color-primary);
   }
 }

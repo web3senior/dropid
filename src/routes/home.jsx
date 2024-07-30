@@ -318,8 +318,8 @@ function Home({ title }) {
     <>
       <section className={`${styles.section} ms-motion-slideDownIn d-f-c flex-column`}>
         <div className={`${styles['__container']} __container`} data-width={`medium`}>
-          <h1 className={`${styles['example']} d-f-c`}>
-            fabian <span>.up</span>{' '}
+          <h1 className={`${styles['example']}`}>
+            fabian<span>.up</span>
           </h1>
 
           <div className={`${styles['form']}`}>
