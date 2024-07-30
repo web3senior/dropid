@@ -240,8 +240,8 @@ function Home({ title }) {
               name: import.meta.env.VITE_NAME,
               description: 'Link Your Wallet, Simplify Your address',
               links: [
-                { title: 'Website', url: 'https://dropid.name' },
-                { title: 'Mint', url: 'https://dropid.name' },
+                { title: 'Website', url: 'https://{import.meta.env.VITE_NAME}.name' },
+                { title: 'Mint', url: 'https://{import.meta.env.VITE_NAME}.name' },
                 { title: '𝕏', url: 'https://x.com/ArattaLabsDev' },
                 { title: 'Telegram', url: 'https://t.me/arattalabs' },
               ],
@@ -383,14 +383,14 @@ function Home({ title }) {
                 <Icon name={`verified`} />
                 <div className={`d-flex flex-column`}>
                   <span> Unique and Verifiable</span>
-                  <small>Your Dropid username is a unique identifier on the blockchain, ensuring authenticity.</small>
+                  <small>Your {import.meta.env.VITE_NAME} username is a unique identifier on the blockchain, ensuring authenticity.</small>
                 </div>
               </li>
               <li className={`d-flex align-items-center`}>
                 <Icon name={`code_blocks`} />
                 <div className={`d-flex flex-column`}>
                   <span> Interoperable</span>
-                  <small> Use your Dropid username across multiple platforms and applications.</small>
+                  <small> Use your {import.meta.env.VITE_NAME} username across multiple platforms and applications.</small>
                 </div>
               </li>
               <li className={`d-flex align-items-center`}>
@@ -404,7 +404,7 @@ function Home({ title }) {
           </div>
 
           <pre className={`mt-40 ms-depth-4`}>
-            <p style={{ color: `rgba(0,255,0,.4)` }}>// Fetch data effortlessly with Dropid SDK 🆙</p>
+            <p style={{ color: `rgba(0,255,0,.4)` }}>// Fetch data effortlessly with {import.meta.env.VITE_NAME} SDK 🆔</p>
             const lyxAddress = LUKSO.getAddressRecord({JSON.stringify({ nodehash: 'fabian.up' })})
           </pre>
         </div>
