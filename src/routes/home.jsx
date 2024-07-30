@@ -365,48 +365,48 @@ function Home({ title }) {
 
         <div className={`__container`} data-width={`medium`}>
           <div className={` ${styles['feature']}`}>
-              <ul>
-                <li className={`d-flex align-items-center`}>
-                  <Icon name={`paid`} />
-                  <div className={`d-flex flex-column`}>
+            <ul>
+              <li className={`d-flex align-items-center`}>
+                <Icon name={`paid`} />
+                <div className={`d-flex flex-column`}>
                   <span>Tradeable</span>
                   <small>Your username is a valuable digital asset that can be bought, sold, or traded on the marketplace.</small>
-                  </div>
-                </li>
-                <li className={`d-flex align-items-center`}>
-                  <Icon name={`contract_edit`} />
-                  <div className={`d-flex flex-column`}>
+                </div>
+              </li>
+              <li className={`d-flex align-items-center`}>
+                <Icon name={`contract_edit`} />
+                <div className={`d-flex flex-column`}>
                   <span>100% Ownership</span>
                   <small>You have full control over your username, without any intermediaries.</small>
-                  </div>
-                </li>
-                <li className={`d-flex align-items-center`}>
-                  <Icon name={`verified`} />
-                  <div className={`d-flex flex-column`}>
+                </div>
+              </li>
+              <li className={`d-flex align-items-center`}>
+                <Icon name={`verified`} />
+                <div className={`d-flex flex-column`}>
                   <span> Unique and Verifiable</span>
                   <small>Your Dropid username is a unique identifier on the blockchain, ensuring authenticity.</small>
-                  </div>
-                </li>
-                <li className={`d-flex align-items-center`}>
-                  <Icon name={`code_blocks`} />
-                  <div className={`d-flex flex-column`}>
+                </div>
+              </li>
+              <li className={`d-flex align-items-center`}>
+                <Icon name={`code_blocks`} />
+                <div className={`d-flex flex-column`}>
                   <span> Interoperable</span>
                   <small> Use your Dropid username across multiple platforms and applications.</small>
-                  </div>
-                </li>
-                <li className={`d-flex align-items-center`}>
-                  <Icon name={`verified_user`} />
-                  <div className={`d-flex flex-column`}>
+                </div>
+              </li>
+              <li className={`d-flex align-items-center`}>
+                <Icon name={`verified_user`} />
+                <div className={`d-flex flex-column`}>
                   <span>Secure</span>
                   <small>Your username is protected by the security of the blockchain.</small>
-                  </div>
-                </li>
-              </ul>
+                </div>
+              </li>
+            </ul>
           </div>
 
           <pre className={`mt-40 ms-depth-4`}>
-          <p style={{opacity: .5}}>// Fetch data effortlessly with Dropid SDK 🤯</p>
-          const lyxAddress = LUKSO.getAddressRecord({JSON.stringify({ nodehash: 'fabian.up'} )})
+            <p style={{ color: `rgba(0,255,0,.4)` }}>// Fetch data effortlessly with Dropid SDK 🤯</p>
+            const lyxAddress = LUKSO.getAddressRecord({JSON.stringify({ nodehash: 'fabian.up' })})
           </pre>
         </div>
       </section>
