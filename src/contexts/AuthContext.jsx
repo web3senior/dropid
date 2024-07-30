@@ -5,6 +5,8 @@ import { useNavigate, useLocation } from 'react-router-dom'
 import ABIobject from './../abi/unigate.json'
 // import lsp3ProfileSchema from '@erc725/erc725.js/schemas/LSP3ProfileMetadata.json'
 import toast, { Toaster } from 'react-hot-toast'
+
+import Loading from './../routes/components/Loading'
 import Web3 from 'web3'
 
 export const ABI = ABIobject
@@ -149,7 +151,7 @@ export function AuthProvider({ children }) {
     logout,
   }
 
-  if (loading) return <small>Loading in Auth Context...</small>
+  if (loading) return <Loading/>
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>
 }
