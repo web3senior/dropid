@@ -403,7 +403,7 @@ function Home({ title }) {
             </ul>
           </div>
 
-          <pre className={`mt-40 ms-depth-4`}>
+          <pre className={`${styles['code-snippet']} mt-40 ms-depth-4`}>
             <p style={{ color: `rgba(0,255,0,.4)` }}>// Fetch data effortlessly with {import.meta.env.VITE_NAME} SDK 🆔</p>
             const lyxAddress = LUKSO.getAddressRecord({JSON.stringify({ nodehash: 'fabian.up' })})
           </pre>
