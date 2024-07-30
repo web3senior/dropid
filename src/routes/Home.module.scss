@@ -3,8 +3,9 @@
 .section {
   user-select: none;
   height: 100%;
+  padding: 8rem 0;
   background-image: url('./../assets/block.svg');
-  background-position: center;
+  background-position: center 8rem;
   background-size: 80%;
   background-repeat: no-repeat;
 

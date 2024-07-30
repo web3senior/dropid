@@ -316,7 +316,7 @@ function Home({ title }) {
 
   return (
     <>
-      <section className={`${styles.section} ms-motion-slideDownIn d-f-c flex-column`}>
+      <section className={`${styles.section} ms-motion-slideDownIn`}>
         <div className={`${styles['__container']} __container`} data-width={`medium`}>
           <h1 className={`${styles['example']}`}>
             fabian<span>.up</span>
