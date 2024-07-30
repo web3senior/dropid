@@ -318,7 +318,7 @@ function Home({ title }) {
       <section className={`${styles.section} ms-motion-slideDownIn`}>
         <div className={`${styles['wrapper']} w-100`}>
           <div className={`__container`} data-width={`medium`}>
-            <h1 className={`${styles['example']}`}>
+            <h1 className={`${styles['example']} animate__animated animate__fadeInDown`}>
               {`fabian`}
               <span>.up</span>
             </h1>

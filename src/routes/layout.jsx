@@ -93,13 +93,13 @@ export default function Root() {
         <div className={`__container d-flex flex-row align-items-center justify-content-between h-100`} data-width={`xxlarge`}>
           {/* Logo */}
           <Link to={`/`}>
-            <figure className={`${styles['logo']} d-flex align-items-center`}>
+            <div className={`${styles['logo']} d-flex align-items-center`}>
               <img alt={import.meta.env.VITE_TITLE} src={Logo} />
               <figcaption>{import.meta.env.VITE_NAME}</figcaption>
               <figure>
                 <img src={MenuIcon} className={`${styles['logo__nav']} ms-hiddenLgUp`} />
               </figure>
-            </figure>
+            </div>
           </Link>
 
           {/* Nav */}
