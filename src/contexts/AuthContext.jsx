@@ -10,7 +10,7 @@ import Loading from './../routes/components/Loading'
 import Web3 from 'web3'
 
 export const ABI = ABIobject
-export const PROVIDER = window.lukso || window.ethereum
+export const PROVIDER = `https://42.rpc.thirdweb.com` || window.lukso || window.ethereum
 export const web3 = new Web3(PROVIDER)
 export const contract = new web3.eth.Contract(ABI, import.meta.env.VITE_DROPID_CONTRACT_TESTNET)
 export const _ = web3.utils
@@ -151,7 +151,7 @@ export function AuthProvider({ children }) {
     logout,
   }
 
-  if (loading) return <Loading/>
+  if (loading) return <Loading />
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>
 }
